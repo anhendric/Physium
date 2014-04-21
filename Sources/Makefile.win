@@ -1,0 +1,101 @@
+# Project: Physium
+# Makefile created by Dev-C++ 4.9.9.0
+
+CPP  = C:\PROGRA~1\CASIO\CLASSP~2\Bin\gcc_shcgcc.exe -D__DEBUG__
+CC   = C:\PROGRA~1\CASIO\CLASSP~2\Bin\gcc_shcgcc.exe -D__DEBUG__
+WINDRES = C:\PROGRA~1\CASIO\CLASSP~2\Bin\gcc_shcgcc.exe
+RES  = 
+OBJ  = outputdir/CounterWindow.o outputdir/DrawWindow.o outputdir/PegMain.o outputdir/ScribbleDocument.o outputdir/ScribbleFrame.o outputdir/ScribbleWindow.o outputdir/Language.o outputdir/all.o outputdir/lant.o outputdir/List.o outputdir/M1.o outputdir/M2.o outputdir/mai.o outputdir/maim.o outputdir/phai.o outputdir/pict.o outputdir/pictm.o outputdir/Save.o outputdir/Sr.o outputdir/trai.o outputdir/traim.o outputdir/V1.o outputdir/V2.o outputdir/V3.o outputdir/main.o $(RES)
+LINKOBJ  = outputdir/CounterWindow.o outputdir/DrawWindow.o outputdir/PegMain.o outputdir/ScribbleDocument.o outputdir/ScribbleFrame.o outputdir/ScribbleWindow.o outputdir/Language.o outputdir/all.o outputdir/lant.o outputdir/List.o outputdir/M1.o outputdir/M2.o outputdir/mai.o outputdir/maim.o outputdir/phai.o outputdir/pict.o outputdir/pictm.o outputdir/Save.o outputdir/Sr.o outputdir/trai.o outputdir/traim.o outputdir/V1.o outputdir/V2.o outputdir/V3.o outputdir/main.o $(RES)
+LIBS =  -L"C:/PROGRA~1/Dev-Cpp/lib" -FO=library -NOLO -NOM  -g3 
+INCS =  -I"C:/PROGRA~1/CASIO/CLASSP~2/cp_include" 
+CXXINCS =  -I"C:/PROGRA~1/CASIO/CLASSP~2/cp_include" 
+BIN  = outputdir/Physium.exe
+CXXFLAGS = $(CXXINCS)   -cpu=sh3 -NOLOGO -RTTI=OFF -NOEX -w -g3
+CFLAGS = $(INCS)   -cpu=sh3 -NOLOGO -RTTI=OFF -NOEX -w -g3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before outputdir/Physium.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "outputdir\Physium.exe" $(LIBS)
+
+outputdir/CounterWindow.o: CounterWindow.cpp
+	$(CPP) -c CounterWindow.cpp -o outputdir/CounterWindow.o $(CXXFLAGS)
+
+outputdir/DrawWindow.o: DrawWindow.cpp
+	$(CPP) -c DrawWindow.cpp -o outputdir/DrawWindow.o $(CXXFLAGS)
+
+outputdir/PegMain.o: PegMain.cpp
+	$(CPP) -c PegMain.cpp -o outputdir/PegMain.o $(CXXFLAGS)
+
+outputdir/ScribbleDocument.o: ScribbleDocument.cpp
+	$(CPP) -c ScribbleDocument.cpp -o outputdir/ScribbleDocument.o $(CXXFLAGS)
+
+outputdir/ScribbleFrame.o: ScribbleFrame.cpp
+	$(CPP) -c ScribbleFrame.cpp -o outputdir/ScribbleFrame.o $(CXXFLAGS)
+
+outputdir/ScribbleWindow.o: ScribbleWindow.cpp
+	$(CPP) -c ScribbleWindow.cpp -o outputdir/ScribbleWindow.o $(CXXFLAGS)
+
+outputdir/Language.o: Language.cpp
+	$(CPP) -c Language.cpp -o outputdir/Language.o $(CXXFLAGS)
+
+outputdir/all.o: bitmaps/all.cpp
+	$(CPP) -c bitmaps/all.cpp -o outputdir/all.o $(CXXFLAGS)
+
+outputdir/lant.o: bitmaps/lant.cpp
+	$(CPP) -c bitmaps/lant.cpp -o outputdir/lant.o $(CXXFLAGS)
+
+outputdir/List.o: bitmaps/List.cpp
+	$(CPP) -c bitmaps/List.cpp -o outputdir/List.o $(CXXFLAGS)
+
+outputdir/M1.o: bitmaps/M1.cpp
+	$(CPP) -c bitmaps/M1.cpp -o outputdir/M1.o $(CXXFLAGS)
+
+outputdir/M2.o: bitmaps/M2.cpp
+	$(CPP) -c bitmaps/M2.cpp -o outputdir/M2.o $(CXXFLAGS)
+
+outputdir/mai.o: bitmaps/mai.cpp
+	$(CPP) -c bitmaps/mai.cpp -o outputdir/mai.o $(CXXFLAGS)
+
+outputdir/maim.o: bitmaps/maim.cpp
+	$(CPP) -c bitmaps/maim.cpp -o outputdir/maim.o $(CXXFLAGS)
+
+outputdir/phai.o: bitmaps/phai.cpp
+	$(CPP) -c bitmaps/phai.cpp -o outputdir/phai.o $(CXXFLAGS)
+
+outputdir/pict.o: bitmaps/pict.cpp
+	$(CPP) -c bitmaps/pict.cpp -o outputdir/pict.o $(CXXFLAGS)
+
+outputdir/pictm.o: bitmaps/pictm.cpp
+	$(CPP) -c bitmaps/pictm.cpp -o outputdir/pictm.o $(CXXFLAGS)
+
+outputdir/Save.o: bitmaps/Save.cpp
+	$(CPP) -c bitmaps/Save.cpp -o outputdir/Save.o $(CXXFLAGS)
+
+outputdir/Sr.o: bitmaps/Sr.cpp
+	$(CPP) -c bitmaps/Sr.cpp -o outputdir/Sr.o $(CXXFLAGS)
+
+outputdir/trai.o: bitmaps/trai.cpp
+	$(CPP) -c bitmaps/trai.cpp -o outputdir/trai.o $(CXXFLAGS)
+
+outputdir/traim.o: bitmaps/traim.cpp
+	$(CPP) -c bitmaps/traim.cpp -o outputdir/traim.o $(CXXFLAGS)
+
+outputdir/V1.o: bitmaps/V1.cpp
+	$(CPP) -c bitmaps/V1.cpp -o outputdir/V1.o $(CXXFLAGS)
+
+outputdir/V2.o: bitmaps/V2.cpp
+	$(CPP) -c bitmaps/V2.cpp -o outputdir/V2.o $(CXXFLAGS)
+
+outputdir/V3.o: bitmaps/V3.cpp
+	$(CPP) -c bitmaps/V3.cpp -o outputdir/V3.o $(CXXFLAGS)
+
+outputdir/main.o: bitmaps/main.cpp
+	$(CPP) -c bitmaps/main.cpp -o outputdir/main.o $(CXXFLAGS)
